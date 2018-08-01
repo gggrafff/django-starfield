@@ -9,5 +9,5 @@ class Stars(Widget):
 
     def get_context(self, name, value, attrs):
         context = super(Stars, self).get_context(name, value, attrs)
-        context['stars'] = self.stars
+        context['stars'] = range(self.stars, 0, -1)
         return context
