@@ -23,3 +23,10 @@ Just add the Stars widget to any IntegerField in a Django form.
 
 You can change the number of stars by passing the stars argument to the
 Stars widget.
+
+Differences
+-----------
+
+This is different from other star rating applications in that it provides
+only a widget returning its selction to any IntegerField. It is not a
+complete rating application, just a presentational widget for integer input.
