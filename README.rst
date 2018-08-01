@@ -30,3 +30,5 @@ Differences
 This is different from other star rating applications in that it provides
 only a widget returning its selction to any IntegerField. It is not a
 complete rating application, just a presentational widget for integer input.
+It is also different in that it depends only on CSS3, without any
+JavaScript.
