@@ -1,0 +1,5 @@
+{% for i in stars %}<!--
+--><input type="radio" name="{{ name }}" id="{{ name }}-{{ forloop.counter0 }}"
+          value="{{ i }}" {% if value == i %}checked="checked"{% endif %} /><!--
+    --><label for="{{ name }}-{{ forloop.counter0 }}"></label><!--
+-->{% endfor %}
