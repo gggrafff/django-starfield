@@ -20,7 +20,7 @@
 .django-starfield label:hover,
 .django-starfield label:hover ~ label
 {
-    color: #189800;
+    filter: grayscale(0.5);;
 }
  
 .django-starfield *
@@ -42,7 +42,8 @@
  
 .django-starfield label
 {
-    color: #ccc;
+    color: #f5b301;
+    filter: grayscale(1);
 }
  
 .django-starfield label::before
@@ -62,7 +63,7 @@
  
 .django-starfield input:checked ~ label
 {
-    color: #f5b301;
+    filter: grayscale(0);
 }
  
 .acidjs-rating-disabled
