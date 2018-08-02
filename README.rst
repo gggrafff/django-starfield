@@ -19,10 +19,23 @@ Just add the Stars widget to any IntegerField in a Django form.
   from django_starfield import Stars
 
   class StarsExampleForm(forms.Form):
-      rating = forms.IntegerField(widget=Stars())
+      rating = forms.IntegerField(widget=Stars)
 
-You can change the number of stars by passing the stars argument to the
-Stars widget.
+The following aspects are configurable, both in the Django settings and when
+creating the widget (by passing an argument to Stars):
+
++------------------------+-----------------------+---------+---------------------+-----------+
+| Aspect                 | Format                | Default | Setting name        | Argument  |
++========================+=======================+=========+=====================+===========+
+| Number of stars        | integer               | 5       | STARFIELD_STARS     | stars     |
++------------------------+-----------------------+---------+---------------------+-----------+
+| Character used as star | hexadecimal codepoint | 2605    | STARFIELD_CODEPOINT | codepoint |
++------------------------+-----------------------+---------+---------------------+-----------+
+| Colour of stars        | HTML colour           | #f5b301 | STARFIELD_COLOUR    | colour    |
++------------------------+-----------------------+---------+---------------------+-----------+
+
+Please note that some browsers render some Unicode characters, especially
+emojis, as images, so changing the font colour will not work.
 
 Differences
 -----------
