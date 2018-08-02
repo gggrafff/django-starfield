@@ -1,6 +1,8 @@
 import os
 from setuptools import setup
 
+MYDIR = os.path.dirname(__file__)
+
 setup(
     name='django-starfield',
     version='1.0',
