@@ -5,7 +5,7 @@ MYDIR = os.path.dirname(__file__)
 
 setup(
     name='django-starfield',
-    version='1.0',
+    version='1.0.post1',
     keywords = ['django', 'forms', 'widget', 'rating'],
     description = 'A no-frills Django form widget for rating stars',
     long_description = open(os.path.join(MYDIR, "README.rst"), "r", encoding="utf-8").read(),
