@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='django-starfield',
-    version='1.0dev0',
+    version='1.0',
     keywords = ['django', 'forms', 'widget', 'rating'],
     description = 'A no-frills Django form widget for rating stars',
     long_description = open(os.path.join(MYDIR, "README.rst"), "r", encoding="utf-8").read(),
