@@ -1,4 +1,4 @@
-from django.forms.widget import Widget
+from django.forms.widgets import Widget
 
 class Stars(Widget):
     template_name = 'django_starfield/stars.html'
