@@ -53,6 +53,11 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.django-starfield label span
+{
+    display: none;
+}
  
 .django-starfield input:checked ~ label
 {
