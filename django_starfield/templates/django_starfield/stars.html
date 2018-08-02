@@ -1,9 +1,9 @@
 {% load static %}
 <div class="django-starfield">
  {% for i in stars %}<!--
- --><input type="radio" name="{{ name }}" id="{{ name }}-{{ forloop.counter0 }}"
-           value="{{ i }}" {% if value == i %}checked="checked"{% endif %} /><!--
-     --><label for="{{ name }}-{{ forloop.counter0 }}"
+ --><input type="radio" name="{{ widget.name }}" id="{{ widget.name }}-{{ forloop.counter0 }}"
+           value="{{ i }}" {% if widget.value == i %}checked="checked"{% endif %} /><!--
+     --><label for="{{ widget.name }}-{{ forloop.counter0 }}"
                style="content: '\{{ codepoint }}'">{{ i }}</label><!--
  -->{% endfor %}
 </div>
