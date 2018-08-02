@@ -21,5 +21,5 @@ class Stars(Widget):
         if not self.codepoint == STARFIELD_CODEPOINT:
             context['codepoint'] = self.codepoint
         if not self.colour == STARFIELD_COLOUR:
-            contect['colour'] = self.colour
+            context['colour'] = self.colour
         return context
