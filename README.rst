@@ -8,6 +8,16 @@ This is a simple widget rendering so-called rating stars as input for an
 integer field. It is based solely on CSS 3, as laid out by `Martin Ivanov
 <http://experiments.wemakesites.net/css3-rating-stars-with-selection.html>`_.
 
+This is different from other star rating applications in that it provides
+only a widget returning its selction to any IntegerField. It is not a
+complete rating application, just a presentational widget for integer input.
+It is also different in that it depends only on CSS3, without any
+JavaScript.
+
+In contrast to others (and to the original work credited above), this widget
+also works on browsers that do not support CSS (like text-mode browsers). In
+that case, it renders as basic radio buttons with numbers.
+
 Usage
 -----
 
@@ -36,12 +46,3 @@ creating the widget (by passing an argument to Stars):
 
 Please note that some browsers render some Unicode characters, especially
 emojis, as images, so changing the font colour will not work.
-
-Differences
------------
-
-This is different from other star rating applications in that it provides
-only a widget returning its selction to any IntegerField. It is not a
-complete rating application, just a presentational widget for integer input.
-It is also different in that it depends only on CSS3, without any
-JavaScript.
