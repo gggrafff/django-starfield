@@ -6,7 +6,7 @@ class Stars(Widget):
     def __init__(self, attrs=None, stars=5, codepoint='2605'):
         super(Stars, self).__init__(attrs)
         self.stars = 5
-        self.codepoint = '2605'
+        self.codepoint = codepoint
 
     def get_context(self, name, value, attrs):
         context = super(Stars, self).get_context(name, value, attrs)
