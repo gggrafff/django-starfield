@@ -1,4 +1,4 @@
-from django.config import settings
+from django.conf import settings
 from django.forms.widgets import Widget
 
 from . import defaults
