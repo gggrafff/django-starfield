@@ -11,12 +11,9 @@ class Stars(Widget):
     def __init__(self, attrs=None, stars=None, codepoint=None, colour=None):
         super(Stars, self).__init__(attrs)
 
-        if stars is None:
-            self.stars = getattr(settings, 'STARFIELD_STARS', STARFIELD_STARS)
-        if codepoint is None:
-            self.codepoint = getattr(settings, 'STARFIELD_CODEPOINT', STARFIELD_CODEPOINT)
-        if colour is None:
-            self.colour = getattr(settings, 'STARFIELD_COLOUR', STARFIELD_COLOUR)
+        self.stars = stars if stars else getattr(settings, 'STARFIELD_STARS', STARFIELD_STARS)
+        self.codepoint = codepoint if codepoint else getattr(settings, 'STARFIELD_CODEPOINT', STARFIELD_CODEPOINT)
+        self.colour = colour if colour else getattr(settings, 'STARFIELD_COLOUR', STARFIELD_COLOUR)
 
     def get_context(self, name, value, attrs):
         context = super(Stars, self).get_context(name, value, attrs)
