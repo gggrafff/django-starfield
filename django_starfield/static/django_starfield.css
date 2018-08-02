@@ -47,6 +47,7 @@
  
 .django-starfield label::before
 {
+    content: '\2605';
     width: 18px;
     line-height: 18px;
     text-align: center;
