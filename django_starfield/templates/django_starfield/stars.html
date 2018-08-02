@@ -7,8 +7,17 @@
  -->{% endfor %}
 </div>
 <link rel="stylesheet" href="{% static 'django_starfield.css' %}" />
+{% if codepoint %}
 <style type="text/css">
  #django-starfield-{{ widget.name }} label::before {
   content: '\{{ codepoint }}';
  }
 </style>
+{% endif %}
+{% if colour %}
+<style type="text/css">
+ #django-starfield-{{ widget.name }} label {
+  color: {{ colour }};
+ }
+</style>
+{% endif %}
