@@ -1,3 +1,5 @@
+Fork https://edugit.org/nik/django-starfield
+
 Django stars widget
 ===================
 
